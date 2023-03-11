@@ -1,17 +1,362 @@
-:root {
-  --branco: #ffffff;
-  --preto:  #0B1D03;
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+
+ :root {
+ --branco: #FFFFFF;
+ --variedades: #A0996C;
+ --background: #F5F5F5;
+ --variedades-item: #F7F1E6;
+ --cor-botao:#0B1D03;
+ --texto-placeholder: #969696;
+ --borda: #0B1D03;
 }
 
 body {
-  margin: 0;
-  color: var(--preto);
+  margin: 0px;
+  background-color: var(--background) 
 }
 
-main {
+h1 {
+  font-family:'Playfair Display', serif;
+  font-style: italic;
+  color: var(--branco);
+}
+
+.banner-principal {
+  background-image: url(assets/banner/banner.png);
   width: 100%;
+  height: 900px;
+}
+
+.banner-texto {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
 }
 
+.banner-elements {
+  color: var(--branco);
+  padding: 130px 0px 0px 60px;
+  
+}
+
+.banner-title h2 {
+  font-size: 80px;
+  margin-bottom: 1px;
+}
+
+.banner-title p {
+  font-size: 32px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  margin-bottom: 100px;
+  margin-top: 10px;
+  
+}
+
+.seta-banner{
+  background-color: transparent;
+  border-right: 40px;
+  border: none;
+}
+
+.destaques {
+  margin-top: 50px;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.destaque {
+  width:75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 200px;
+  margin-top: 70px;
+
+}
+
+.destaque-texto{
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.destaque h2{
+  font-family:'Playfair Display', serif;
+  font-size: 45px;
+}
+
+.destaque p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+}
+
+.destaque img {
+  width: 450px;
+}
+
+.varieties {
+  width: 90%;
+}
+
+.varieties h2 {
+  color: var(--variedades);
+  font-size: 35px;
+  margin-left: 250px;
+}
+
+.variety-cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  flex-direction: row;
+  margin-left: 250px;
+  justify-content: space-between;
+}
+
+.varieties img {
+  width: 130px;
+  margin-left: 80px;
+}
+
+.cafe p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-left: 65px;
+}
+
+.cafe {
+  margin-right: 10px;
+  margin-bottom: 50px;
+  background-color: var(--variedades-item);
+  border-radius: 5px;
+  border: none;
+  width: 300px;
+  height: 330px;
+}
+
+button {
+  margin-left: 25px;
+  width:250px;
+  height: 40px;
+  color: var(--variedades-item);
+  background-color: var(--cor-botao)
+}
+
+#preco {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+ font-size: 25px ;
+}
+
+.preco2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  opacity: 0.5;
+}
+
+.valores {
+  margin-left: 30px;
+}
+
+.mid-section {
+  width: 75%;
+  margin-left: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+.icones{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 100px 0 50px 300px;
+  text-align: center;
+}
+
+.icones img {
+  width: 50px;
+}
+
+.icones p{
+  text-align: center;
+}
+
+.catalogo {
+  width: 90%;
+}
+.catalogo-texto {
+  background-image: url(assets/coffee/catalogo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 500px;
+  height: 400px;
+  margin-left: 150px;
+}
+
+.benefits h2 {
+  color: var(--branco);
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 35px;
+  margin-left: 50px;
+  margin-top: 300px;
+  line-height: 2px;
+}
+.benefits p {
+  color: var(--branco);
+  font-family: 'Open Sans', sans-serif;
+  font-weight:300;
+  margin-left: 50px;
+}
+
+.acessorios {
+  background-image: url(assets/coffee/acessorios.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 500px;
+  height: 400px;
+}
+
+.benefits {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0 100px 100px 100px;
+}
+
+.encontre h3{
+  font-size: 40px;
+}
+
+.find-store {
+  width: 85%;
+  margin-left: 200px;
+}
+.formulario {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cidade {
+  border: 2px solid var(--borda);
+  width: 300px;
+  height: 50px;
+  background-color: var(--branco);
+  justify-content: center;
+  border-radius: 3px;
+  margin-right: 20px;
+  opacity: 0.7;
+}
+
+.cidade input {
+  justify-content: center;
+  border: none;
+  margin-right: 50px;
+  margin-top: 15px; 
+  font-size: 15px;
+  margin-left: 20px;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--texto-placeholder);
+}
+
+.endereco {
+  border: 2px solid var(--borda);
+  width: 670px;
+  height: 50px;
+  background-color: var(--branco);
+  justify-content: center;
+  border-radius: 3px;
+  opacity: 0.7;
+  }
+
+  .endereco input {
+    justify-content: center;
+    border: none;
+    margin-right: 420px;
+    margin-top: 15px; 
+    font-size: 15px;
+    margin-left: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--texto-placeholder);
+  }
+  
+  .find-store img {
+    width: 15px;
+  }
+
+  .mapa {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--variedades-item);
+  }
+  
+  .containers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .marca {
+    font-family:'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 17px;
+  }
+
+  .container h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 16px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin: 10px 0 10px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+  }
+
+  a { 
+    color: inherit; 
+    text-decoration: none;
+  } 
+
+.creditos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  margin-top: 30px;
+}
+
+.creditos img {
+  height: 20px;
+  margin-top: 23px;
+  margin-left: 20px;
+}
+
+  

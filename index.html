@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Black Coffee</title>
 </head>
 <body>
   <main>
 
-    <section class="banner">
-      <header>
-        <img src="assets/banner/banner.png" alt="Mesa com suportes de coador. Em uma parede organizadores com variedades de café">
-        <img src="assets/header/menu.png" alt="Botão de menu" >
+    <section class="banner-principal">
+      <header class="banner-texto">
+        <img class="botao-header" src="assets/header/menu.png" alt="Botão de menu" >
         <h1>BlackCoffee</h1>
-        <img src="assets/header/carrinho.svg" alt="Botão para o carrinho">
+        <img class="botao-header" src="assets/header/carrinho.svg" alt="Botão para o carrinho">
       </header>
 
       <div class="banner-elements">
@@ -22,32 +22,32 @@
            <img src="assets/banner/selecao.png" alt="Menu secundário">
         </div>
         <div class="banner-title">
-          <h1>Preparamos o melhor café fresco da torra cada dia </h1>
+          <h2>Preparamos o<br> melhor café fresco<br> da torra cada dia </h2>
           <p>Entregamos em todo Brasil</p>
         </div>
         <div class="banner-arrows">
-          <button>
+          <button class="seta-banner">
             <img src="assets/banner/arrowl.png" alt="Voltar página">
           </button>
-          <button>
+          <button class="seta-banner">
             <img src="assets/banner/arrowr.png" alt="Próxima página">
           </button>
         </div>
       </div>
     </section>
 
-    <section class="highlights">
-      <div>
+    <section class="destaques">
+      <div class="destaque">
         <div>
           <img src="assets/coffee/cafe-magico.png" alt="Café expresso sendo preparado">
         </div>
-        <div>
+        <div class="destaque-texto">
           <h2>Café magico...</h2>
           <p>Preparado com os melhores ingredientes e com os melhores acessórios, seguindo os métodos tradicionais e os mais modernos.</p>
         </div>
       </div>
-      <div>
-        <div>
+      <div class="destaque">
+        <div class="destaque-texto">
           <h2>...e muito mais</h2>
           <p>Não esqueça de dar uma olhada em nossa seleção de sobremesas deliciosas!</p>
         </div>
@@ -57,53 +57,65 @@
       </div>
       </section>
 
-    <section class="varieties">
+    <section class="varieties"> 
       <h2>Variedades de café</h2>
       <div class="variety-cards">
-        <div>
+        <div class="cafe">
           <p>RUANDA UMARAGE NAT</p>
           <img src="assets/coffee/variedades.png" alt="Embalagem de café">
-          <p>40 R$ <span>60 R$</span></p>
+            <div class="valores">
+          <p id="preco">40 R$ <span class="preco2">60 R$</span></p>
+           </div>
           <button>
             + adicionar ao carrinho
           </button>
         </div>
-        <div>
+        <div class="cafe">
           <p>RUANDA UMARAGE NAT</p>
           <img src="assets/coffee/variedades.png" alt="Embalagem de café">
-          <p>40 R$ <span>60 R$</span></p>
+             <div class="valores">
+          <p id="preco">40 R$ <span class="preco2">60 R$</span></p>
+              </div>
           <button>
             + adicionar ao carrinho
           </button>
         </div>
-        <div>
+        <div class="cafe">
           <p>RUANDA UMARAGE NAT</p>
           <img src="assets/coffee/variedades.png" alt="Embalagem de café">
-          <p>40 R$ <span>60 R$</span></p>
+             <div class="valores">
+          <p id="preco">40 R$ <span class="preco2">60 R$</span></p>
+              </div>
           <button>
             + adicionar ao carrinho
           </button>
         </div>
-        <div>
+        <div class="cafe">
           <p>RUANDA UMARAGE NAT</p>
           <img src="assets/coffee/variedades.png" alt="Embalagem de café">
-          <p>40 R$ <span>60 R$</span></p>
+             <div class="valores">
+          <p id="preco">40 R$ <span class="preco2">60 R$</span></p>
+              </div>
           <button>
             + adicionar ao carrinho
           </button>
         </div>
-        <div>
+        <div class="cafe">
           <p>RUANDA UMARAGE NAT</p>
           <img src="assets/coffee/variedades.png" alt="Embalagem de café">
-          <p>40 R$ <span>60 R$</span></p>
+             <div class="valores">
+          <p id="preco">40 R$ <span class="preco2">60 R$</span></p>
+              </div>
           <button>
             + adicionar ao carrinho
           </button>
         </div>
-        <div>
+        <div class="cafe">
           <p>RUANDA UMARAGE NAT</p>
           <img src="assets/coffee/variedades.png" alt="Embalagem de café">
-          <p>40 R$ <span>60 R$</span></p>
+             <div class="valores">
+          <p id="preco">40 R$ <span class="preco2">60 R$</span></p>
+              </div>
           <button>
             + adicionar ao carrinho
           </button>
@@ -112,51 +124,55 @@
     </section>
 
     <section class="mid-section">
-      <div>
-        <img src="assets/icons/entrega.svg" alt="Ícone de caminhão">
-        <p>Entrega gratuita</p>
-      </div>
-      <div>
-        <img src="assets/icons/pagamento.svg" alt="Ícone de sementes de café">
-        <p>Pagamento na entrega</p>
-      </div>
-      <div>
-        <img src="assets/icons/reembolso.svg" alt="Ícone de carteira">
-        <p>Política de reembolso</p>
-      </div>
-      <div>
-        <img src="assets/icons/descontos.svg" alt="Ícone de etiqueta de desconto">
-        <p>Sistema de descontos acumuláveis</p>
-      </div>
-      <div>
-        <img src="assets/icons/presentes.svg" alt="Ícone de caixa de presente">
-        <p>Presente por cada 6 caixas de café</p>
-      </div>
-      <div class="benefits">
+      <div class="icones">
         <div>
-        <img src="assets/coffee/catalogo.png" alt="Café torrado dentro de uma xícara">
-        <h2>Catálogo de cafés</h2>
-        <p>Mais de 50 tipos de café fresco da torra para qualquer método de preparo</p>
+          <img src="assets/icons/entrega.svg" alt="Ícone de caminhão">
+          <p>Entrega<br> gratuita</p>
+       </div>
+        <div>
+          <img src="assets/icons/pagamento.svg" alt="Ícone de sementes de café">
+          <p>Pagamento<br> na entrega</p>
         </div>
         <div>
-          <img src="assets/coffee/acessorios.png" alt="Cafeteira Italiana Moka">
-          <h2>Acessórios</h2>
-          <p>Todo o que a gente precisa para preparar um café saboroso em casa</p>
+          <img src="assets/icons/reembolso.svg" alt="Ícone de carteira">
+          <p>Política<br> de reembolso</p>
+       </div>
+        <div>
+          <img src="assets/icons/descontos.svg" alt="Ícone de etiqueta de desconto">
+          <p>Sistema de descontos<br> acumuláveis</p>
+       </div>
+        <div>
+          <img src="assets/icons/presentes.svg" alt="Ícone de caixa de presente">
+          <p>Presente por cada<br> 6 caixas de café</p>
+       </div>
+      </div>
+    </section>
+    <section class="catalogo">
+      <div class="benefits">
+        <div class="catalogo-texto">
+          <h2>Catálogo de cafés</h2>
+          <p>Mais de 50 tipos de café fresco da torra para <br> qualquer método de preparo</p>
+        </div>
+        <div class="acessorios">  
+          <h2>Acessórios</h2>     
+          <p>Todo o que a gente precisa para preparar um <br> café saboroso em casa</p>
         </div>
       </div>
     </section>
-
+    
     <section class="find-store">
-        <div>
+        <div class="encontre">
           <h3>Encontre uma loja</h3>
         </div>
-        <div>
-          <input type="text" placeholder="Escolha a cidade">
-          <img src="assets/icons/arrowdown.svg" alt="">        
-        </div>
-        <div>
-          <input type="text" placeholder="Digite o endereço">
-          <img src="assets/icons/lupa.svg" alt="">
+        <div class="formulario">
+          <div class="cidade">
+            <input class="seta-baixo" type="text" placeholder="Escolha a cidade">
+           <img src="assets/icons/arrowdown.svg" alt="">
+          </div>  
+          <div class="endereco">
+           <input type="text" placeholder="Digite o endereço">
+            <img src="assets/icons/lupa.svg" alt="">
+          </div>
         </div>
         <div class="mapa">
           <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d7305.8053445167425!2d-46.85423562660801!3d-23.715169438426837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x94cfad1392a68895%3A0x29bd223b2feebff1!2sPra%C3%A7a%20Prof.%20Porcino%20Rodrigues%20-%20Centro%2C%20Itapecerica%20da%20Serra%20-%20SP%2C%2006850-060!3m2!1d-23.714601299999998!2d-46.850036499999995!5e0!3m2!1spt-BR!2sbr!4v1675528565596!5m2!1spt-BR!2sbr" width="1000" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -164,11 +180,11 @@
     </section>
   </main>
   <footer>
-    <div>
-      <div>
+    <div class="containers">
+      <div class="marca">
         <p>BlackCoffee</p>
       </div>
-      <div>
+      <div class="container">
         <h6>INSTITUCIONAL</h6>
         <nav>
           <ul>
@@ -179,7 +195,7 @@
           </ul>
         </nav>
       </div>
-      <div>
+      <div class="container">
         <h6>PRODUTOS</h6>
         <nav>
           <ul>
@@ -190,18 +206,19 @@
           </ul>
         </nav>
       </div>
-      <div>
+      <div class="container">
+        
         <h6>REDES SOCIAIS</h6>
-        <nav>
-          <ul>
-            <li><a href="#"><img src="assets/footer/instagram.png" alt="Logo Instagram"></a></li>
-            <li><a href="#"><img src="assets/footer/twitter.png" alt="Logo Twitter"></a></li>
-            <li><a href="#"><img src="assets/footer/facebook.png" alt="Logo Facebook"></a></li>
-          </ul>
+        <nav class="redes-sociais">
+          <div>
+            <a href="#"><img src="assets/footer/instagram.png" alt="Logo Instagram"></a>
+            <a href="#"><img src="assets/footer/twitter.png" alt="Logo Twitter"></a>
+            <a href="#"><img src="assets/footer/facebook.png" alt="Logo Facebook"></a>
+          </div>
         </nav>
       </div>
     </div>
-    <div>
+    <div class="creditos">
       <p>DESIGNED BY</p>
       <img src="assets/footer/mentorama.png" alt="Logo Mentorama">
     </div>
