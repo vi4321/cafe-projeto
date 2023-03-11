@@ -37,7 +37,6 @@ h1 {
 .banner-elements {
   color: var(--branco);
   padding: 130px 0px 0px 60px;
-  
 }
 
 .banner-title h2 {
@@ -51,7 +50,6 @@ h1 {
   font-weight: 300;
   margin-bottom: 100px;
   margin-top: 10px;
-  
 }
 
 .seta-banner{
@@ -76,7 +74,6 @@ h1 {
   justify-content: space-between;
   margin-left: 200px;
   margin-top: 70px;
-
 }
 
 .destaque-texto{
@@ -150,7 +147,7 @@ button {
 #preco {
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
- font-size: 25px ;
+  font-size: 25px ;
 }
 
 .preco2 {
